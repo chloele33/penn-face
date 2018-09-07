@@ -1,3 +1,3 @@
 # Penn Face
 
-Google Chrome browser extension that replaces your cursor with pictures of Penn professors
+Chrome browser extension that replaces your cursor with pictures of Penn professors
