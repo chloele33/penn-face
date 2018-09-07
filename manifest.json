@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+
+    "name": "Penn Face",
+    "description": "replaces mouse icon with pictures of Penn professors",
+
+    "version": "1.0",
+
+    "background": {
+        "scripts": [ "background.js" ],
+        "persistent": false
+    }, 
+
+    "content_scripts": [
+      {
+        "matches": ["http://www.*"],
+        "css": ["content_scripts/penn-face.css"],
+        "js": [
+                "content_scripts/jquery.min.js",
+                "content_scripts/penn-face.js",
+                "content_scripts/main.js"
+        ]
+      }
+    ], 
+
+    "permissions": [
+        "declarativeContent", 
+        "activeTab"
+    ], 
+    
+    "page_action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "popup/icon.png",
+        "default_title": "Penn Face"
+    }
+}
