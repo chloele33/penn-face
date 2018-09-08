@@ -9,29 +9,25 @@
       }
 
       button {
-          margin: 5px;
-          width: 90px;
-          background: blue;
-          color: white;
+        width: 100px;
+        height: 50px;
+        background: white;
+        color: grey;
+        font-size: 15px;
       }
 
-      input {
-          width: 90px;
-          margin: 5px;
-      }
-
-      img {
-        margin: 5px;
-        border: 2px solid black;
-        vertical-align: middle;
-        height: 75px;
+      #currentFace {
+        margin-bottom: 15px;
+        margin-left: 10px; 
       }
     </style>
   </head>
   <body>
-    <input id="username" type="text" placeholder="username.." />
+    <div id="currentFace"></div>
+    <button>Upload Face</button>
+    <div style="height: 15px"></div>
+    <button>Choose Face</button>
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>
-
