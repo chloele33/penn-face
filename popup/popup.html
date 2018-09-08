@@ -2,31 +2,18 @@
 <html>
   <head>
       <title>IAmA Extension Popup</title>
-    <style>
-      body {
-        overflow-x: hidden;
-        width: 100px;
-      }
-
-      button {
-        width: 100px;
-        height: 50px;
-        background: white;
-        color: grey;
-        font-size: 15px;
-      }
-
-      #currentFace {
-        margin-bottom: 15px;
-        margin-left: 10px; 
-      }
-    </style>
+      <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <div id="currentFace"></div>
-    <button>Upload Face</button>
+    <div style="height: 120px"></div>
+
+    <input type="button" value="Choose Face 1" onClick="chooseFace1()"></input>
     <div style="height: 15px"></div>
-    <button>Choose Face</button>
+    <button onclick="chooseFace2()">Choose Face 2</button>
+    <div style="height: 15px"></div>
+    <button type="button" onclick="uploadFace()">Upload Face</button>
+
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
   </body>
