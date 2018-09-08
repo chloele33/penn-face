@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener(function () {
       {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { hostSuffix: '.reddit.com', pathPrefix: '/r/IAmA/comments' }
+            pageUrl: { }
           })
         ],
 
