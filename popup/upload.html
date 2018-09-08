@@ -1,0 +1,74 @@
+
+<body>
+<h3>Upload a New Face</h3>
+<p>
+	Provide the URLs of two images you want to change your cursor into.
+</p>
+<form id="file-form" method="post" enctype="multipart/form-data">
+	<!-- uploading functionality RIP sweet prince -->
+	<!-- <input type="hidden" name="extra-data" >
+	<input type="file" id="file-input" name="file-input" accept=".jpg, .jpeg, .png"> -->
+	<input id="imgHappyURL" name="imgHappyURL" type="url" placeholder="happy face!">
+
+	<input id="imgSadURL" name="imgSadURL" type="url" placeholder="sad face!">
+</form>
+
+<button onclick="submitFunc()">Submit</button>
+<p id="failuremessage" style="display:none"> One or both of your image URLs are invalid, please try again! </p>
+
+<img style="display: none" id="happyImage" onerror="errorCallback()" onload="loadCallback()" />
+<img style="display: none" id="sadImage" onerror="errorCallback()" onload="loadCallback()" />
+
+</body>
+
+<!-- <script src="filereader.js"></script> -->
+<!-- <script src="popup.js"></script> -->
+
+<script>
+
+var fail = document.getElementById("failuremessage");
+var happyFace;
+var sadFace;
+
+var errorCallback = function () {
+  	fail.style.display="block";
+
+  	// testing
+  	document.getElementById('happyImage').style.display="none";
+  	document.getElementById('sadImage').style.display="none";
+}
+
+var loadCallback = function () {
+  	fail.style.display="none";
+
+  	// testing
+  	document.getElementById('happyImage').style.display="block";
+	document.getElementById('sadImage').style.display="block";
+}
+
+function submitFunc() {
+	happyFace = document.getElementById("imgHappyURL");
+	sadFace = document.getElementById("imgSadURL");
+	happyFace.setAttribute("type", "url");
+	sadFace.setAttribute("type", "url");
+
+	document.getElementById('happyImage').src = happyFace.value;
+	document.getElementById('sadImage').src = sadFace.value;
+}
+
+// uploading functionality rip never forgetti
+// FileReaderJS.setupInput(document.getElementById('file-input'), {
+//   readAsDefault: "DataURL",
+//   on: {
+//     load: function(e, file) {
+//       var img = new Image();
+//       img.onload = function() {
+//         document.body.appendChild(img);
+
+//       };
+//       img.src = e.target.result;
+//     }
+//   }
+// });
+
+</script>
