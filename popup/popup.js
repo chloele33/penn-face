@@ -1,10 +1,13 @@
 var currentFace = document.getElementById("currentFace");
 
+
+console.log(document.cursorURL1);
+
 var image = document.createElement("img");
-image.setAttribute("src", "../assets/amyghappy.png");
+image.setAttribute("src", "url(" + document.cursorURL1 + ")");
 
 var image2 = document.createElement("img");
-image2.setAttribute("src", "../assets/amygsad.png");
+image2.setAttribute("src", "url(" + document.cursorURL1 + ")");
 
 function setFace(path) {
   image.setAttribute("src", path);

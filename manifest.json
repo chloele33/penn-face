@@ -25,7 +25,8 @@
 
     "permissions": [
         "declarativeContent", 
-        "activeTab"
+        "activeTab",
+        "storage"
     ], 
     
     "page_action": {
