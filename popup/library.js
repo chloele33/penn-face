@@ -1,3 +1,17 @@
+document.getElementById("amy1").addEventListener("click", changeAmy)
+document.getElementById("amy2").addEventListener("click", changeAmy)
+document.getElementById("cjt1").addEventListener("click", changeCJ)
+document.getElementById("cjt2").addEventListener("click", changeCJ)
+document.getElementById("raj1").addEventListener("click", changeRaj)
+document.getElementById("raj2").addEventListener("click", changeRaj)
+document.getElementById("san1").addEventListener("click", changeSan)
+document.getElementById("san2").addEventListener("click", changeSan)
+document.getElementById("ste1").addEventListener("click", changeSte)
+document.getElementById("ste2").addEventListener("click", changeSte)
+document.getElementById("ccb1").addEventListener("click", changeCCB)
+document.getElementById("ccb2").addEventListener("click", changeCCB)
+
+
 function reset() {
 	var happy = document.getElementsByClassName("activehappy")[0];
 	happy.classList.remove("activehappy");
