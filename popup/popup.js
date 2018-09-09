@@ -17,5 +17,24 @@ image2.setAttribute("width", "70");
 image2.setAttribute("height", "auto");
 
 
+// function popitup(url) {
+//   newwindow=window.open(url,'name','height=200,width=150');
+//   if (window.focus) {newwindow.focus()}
+//   return false;
+//}
+
+
+document.getElementById("library").onclick = function() {
+  // Fixes dual-screen position                         Most browsers      Firefox
+  var left = ((screen.width / 2) - (500 / 2));
+  var top = ((screen.height / 2) - (500 / 2));
+  newwindow=window.open('/popup/library.html','name','scrollbars = yes, height=500,width=500, top=' + top + ',left =' + left);
+  if (window.focus) {
+    newwindow.focus()
+  }
+  return false;
+};
+
+
 currentFace.appendChild(image);
 currentFace.appendChild(image2);

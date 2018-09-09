@@ -1,10 +1,16 @@
 <head>
-	<h3>Change Current Face</h3>
+	<div class="centered">
+		<h3>Change Current Face</h3>
+	</div>
 
 	<style>
 		.column {
 		    float: left;
 		    width: 25%;
+		}
+
+		.centered {
+			text-align: center;
 		}
 
 		/* Clear floats after the columns */
@@ -15,7 +21,7 @@
 		}
 
 		.row {
-			width: 50%;
+			width: 	100%;
 		}
 
 		.face {
@@ -31,19 +37,17 @@
 			background-color: #1b4b99;
 		}
 
-		@media screen and (max-width: 600px) {
-		    .column {
-		        width: 100%;
-		    }
-		}
+		
 	</style>
 
 </head>
 
 <body>
-<p>
-	Choose which two faces you'd like to use as your cursor.
-</p>
+<div class="centered">
+	<p>
+		Choose which two faces you'd like to use as your cursor.
+	</p>
+</div>
 
 <div class="row">
 	<div class="column" id="activehappy">
