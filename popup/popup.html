@@ -10,10 +10,18 @@
 
       button {
         width: 100px;
-        height: 50px;
-        background: white;
-        color: grey;
-        font-size: 15px;
+        height: 40px;
+        background: rgba(0,0,0,0.3);
+        color: white;
+        border: none;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background: #356AD2;
+        color: white;
+        cursor: pointer;
       }
 
       #currentFace {
@@ -25,7 +33,7 @@
   <body>
     <div id="currentFace"></div>
     <div id="currentFace"></div>
-    <div style="height: 15px"></div>
+
     <button id = "library">Choose Face</button>
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
