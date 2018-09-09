@@ -1,0 +1,83 @@
+<head>
+	<h3>Change Current Face</h3>
+
+	<style>
+		.column {
+		    float: left;
+		    width: 25%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+
+		.row {
+			width: 50%;
+		}
+
+		.face {
+			max-width:100%;
+			height: auto;
+		}
+
+		#activehappy {
+			background-color: #991b1b;
+		}
+
+		#activesad {
+			background-color: #1b4b99;
+		}
+
+		@media screen and (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		    }
+		}
+	</style>
+
+</head>
+
+<body>
+<p>
+	Choose which two faces you'd like to use as your cursor.
+</p>
+
+<div class="row">
+	<div class="column" id="activehappy">
+  		<img class="face" src="../assets/amyghappy.png" alt="Happy Amy G">
+	</div>
+	<div class="column" id="activesad">
+		<img class="face" src="../assets/amygsad.png" alt="Sad Amy G">
+	</div>
+	<div class="column">
+  		<img class="face" src="../assets/amyghappy.png" alt="Happy Amy G">
+	</div>
+	<div class="column">
+		<img class="face" src="../assets/amygsad.png" alt="Sad Amy G">
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+  		<img class="face" src="../assets/amyghappy.png" alt="Happy Amy G">
+	</div>
+	<div class="column">
+		<img class="face" src="../assets/amygsad.png" alt="Sad Amy G">
+	</div>
+	<div class="column">
+  		<img class="face" src="../assets/amyghappy.png" alt="Happy Amy G">
+	</div>
+	<div class="column">
+		<img class="face" src="../assets/amygsad.png" alt="Sad Amy G">
+	</div>
+</div>
+
+</body>
+
+<script>
+
+
+
+</script>
