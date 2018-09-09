@@ -1,0 +1,2 @@
+'https://raw.githubusercontent.com/chloele33/penn-face/master/assets/amyghappy-cursor.png'
+'https://raw.githubusercontent.com/chloele33/penn-face/master/assets/amygsad-cursor.png'
