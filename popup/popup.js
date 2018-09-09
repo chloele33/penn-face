@@ -19,3 +19,8 @@ image2.setAttribute("height", "auto");
 
 currentFace.appendChild(image);
 currentFace.appendChild(image2);
+
+function uploadFace() {
+  var url = "chrome-extension://eknlcodhikmedmhehebepnppiaileabg/chooseface/chooseface.html";
+  window.origin.open(url);
+}
